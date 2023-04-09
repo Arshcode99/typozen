@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typozen | Typing Master Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <a href="#">
+      <div class="logo">Typozen</div></a>
+      <div class="links">
+        <a href="http://arshcode.vercel.app">
+        <button>Support us</button></a>
+      </div>
+    </header>
+
+    <div class="message" id="succ"></div>
+    <div class="failmessage" id="fail"></div>
+    <div class="main">
+      <h2>Typozen - Your Typing Assistant!</h2>
+      <div class="three-col">
+        <div class="col">Speed: <span class="output" id="speed"></span></div>
+        <div class="col">
+          Correct: <span class="output" id="correct"></span>
+        </div>
+        <div class="col">Errors: <span class="output" id="errors"></span></div>
+      </div>
+      <div class="form">
+        <div id="form">
+          <label for="Text">Type The Text Given Below*</label>
+          <div class="txt" id="txt"></div>
+          <textarea name="Text" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="btn-holder">
+          <button id="btn">Start</button
+          ><button id="btndone">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
